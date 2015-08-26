@@ -1,6 +1,7 @@
 #body {
   background-image: url(../img/flowerbg.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
   font-family: 'Abel', sans-serif;
 }
 
@@ -21,8 +22,6 @@
   margin-left: 5.5%;
 }
 .hidden {
-  position: relative;
-  left: 50%;
   font-family: 'Abel', sans-serif;
   display: none;
 }

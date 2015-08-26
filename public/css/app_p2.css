@@ -1,4 +1,4 @@
-*{
+* {
   font-family: Abel, sans-serif;
 }
 
@@ -7,11 +7,13 @@
 }
 
 #nav{
+  background-color: #f2ba05;
   border: solid black 1px;
   width: 100%;
 }
 
 #flowerIcons{
+  background-color: #465902;
   width: 99.8%;
   border: solid black 1px;
 }
