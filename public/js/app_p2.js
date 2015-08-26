@@ -29,16 +29,23 @@
       });
     }
 
-    // If the current page is Page3, execute these commands
+    // If the current page is Page2, execute these commands
     if (window.location.href.indexOf("index_p2")>(-1)){
+      // Check for (and extract) an existing flowerBoxList in local storage
       if (localStorage.getItem('flowerBoxList')) {
         var flowerBoxArray = JSON.parse(localStorage.getItem('flowerBoxList'));
         for (var i = 0; i < flowerBoxArray.length; i++){
+          // Display flowers in the existing flowerBoxList
           $('.'+flowerBoxArray[i]).css("display", "block");
         }
       }
+      // localStorage.setItem('user', 'Claire');
+      // if (localStorage.getItem('user')){
+      //   var user = JSON.parse(localStorage.getItem('user'));
+      //   $('#flowerBoxHeading').text(user.user_name + "'s Flower Box");
+      // }
 
-      // Add event listener to a button that empty's the flower box
+      // Add event listener to a button allowing user to empty the flower box
       $('.emptyBox').on('click', function(){
         localStorage.setItem('flowerBoxList', '');
         window.location.href = "index_p2.html";
