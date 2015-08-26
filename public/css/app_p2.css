@@ -1,0 +1,76 @@
+.hide{
+  display: none;
+}
+
+#nav{
+  border: solid black 1px;
+  width: 100%;
+}
+
+#flowerIcons{
+  width: 99.8%;
+  border: solid black 1px;
+}
+
+.photoIcon{
+  width: 12%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+#topRow{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#bottomRow{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#flowerBox{
+  border: solid black 1px;
+  width: 400px;
+}
+
+.flowerSummary{
+/*  text-align: justify;*/
+  border: solid black 1px;
+  position: relative;
+}
+
+.flowerBoxImageContainer{
+  width: 60px;
+  display: block;
+  text-align: justify;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.flowerBoxText{
+  width: 250px;
+  display: block;
+  margin-left: 60px;
+}
+
+.flowerBoxImage{
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.flowerBoxText{
+  display: inline-block;
+  width: 80%;
+  text-align: justify;
+}

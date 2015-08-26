@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/app_p2.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <title>Garden Reminder</title>
+</head>
+<body>
+  <table id="nav">
+    <tr>
+        <td id="p1"><a href="index.html">Log In</a></td>
+        <td id="p2">Flower Box</td>
+      <td id="p3"><a href="index_p3.html">Flower Detail</td>
+      <td id="siteName"><h1>Garden Reminder</h1></td>
+    </tr>
+  </table>
+  <section id="flowerIcons">
+    <div id="topRow">
+      <a href="index_p3.html#petunia">
+        <img id="petunia" src="images/petunias.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#marigold">
+        <img id="marigold" src="images/marigolds.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#daisy">
+        <img id="daisy" src="images/daisies.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#rose">
+        <img id="rose" src="images/roses.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#verbena">
+        <img id="verbena" src="images/verbenas.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#hydrangea">
+        <img id="hydrangea" src="images/hydrangeas.jpg" class="photoIcon">
+      </a>
+    </div>
+    <div id="bottomRow">
+      <a href="index_p3.html#lily">
+        <img id="lily" src="images/lilies.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#tulip">
+        <img id="tulip" src="images/tulips.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#geranium">
+        <img id="geranium" src="images/geraniums.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#rhododendron">
+        <img id="rhododendron" src="images/rhododendrons.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#begonia">
+        <img id="begonia" src="images/begonias.jpg" class="photoIcon">
+      </a>
+      <a href="index_p3.html#pansy">
+        <img id="pansy" src="images/pansies.jpg" class="photoIcon">
+      </a>
+    </div>
+  </section>
+  <section id="flowerBox">
+    <h1>User's Flower Box</h1>
+    <button class="emptyBox">Empty Flower Box</button>
+    <div class="flowerSummary petunia hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/petunias.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Water once every 7 to 10 days. Provide 1 to 2 inches of water at each irrigation, which is enough water to moisten the top 6 to 8 inches of soil. Petunias can tolerate mild drying but the soil shouldn't be allowed to dry out completely.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary marigold hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/marigolds.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Established marigolds in garden beds need a good soak once each week. Give them enough water so that the soil is moist to a depth of 6 to 8 inches. If the weather is unusually hot or windy, they'll need extra water. Water marigolds in pots when the top 1 to 2 inches of soil is dry. If your marigolds stop flowering in hot weather, give them some extra water, which often restarts flower bud formation.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary daisy hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/daisies.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Too much high nitrogen fertilizer may lead to droopy plants; a thin layer of well-rotted compost will keep them healthy and perky. Too much water also promotes wilting. Plants need about an inch of water a week. They begin growing upward again when heavy rains end.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary rose hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/roses.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> How often to water depends greatly on the climate in your area. Climates that feature little rainfall and high temperatures will require you to water much more frequently. Roses growing in an area where the temperature rises near or above 90 degrees every day should be watered every day. Highs in the 80s indicate watering every other day, in the 70s every third day, and so on. If your soil receives more than 1 inch of rain, do not water your roses.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary verbena hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/verbenas.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Apply 1 inch of water at least once a week or whenever the soil appears dry, but not to the point of saturation. Water the plants at soil level and not from overhead, digging into the soil to a depth of 6 inches to check for moisture and watering until the soil is damp to that depth. Check the soil moisture about once a week during average weather and every other day during hot, dry weather.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary hydrangea hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/hydrangeas.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Horticulturists at North Dakota State University offer the following guideline regarding frequency of irrigation: water enough to prevent wilting. Generally, this means you'll need to water hydrangeas once or twice a week during the summer season. Water in the morning or evening rather than in the heat of the day, and avoid overhead irrigation. Hydrangeas are dormant in winter, so no irrigation is required.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary lily hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/lilies.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Horticulturists at North Dakota State University offer the following guideline regarding frequency of irrigation: water enough to prevent wilting. Generally, this means you'll need to water hydrangeas once or twice a week during the summer season. Water in the morning or evening rather than in the heat of the day, and avoid overhead irrigation. Hydrangeas are dormant in winter, so no irrigation is required.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary tulip hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/tulips.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Water sprouted tulips with 2 inches of water a week to maintain consistent soil moisture, and keep them in full sun for six to eight hours a day.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary geranium hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/geraniums.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Water geraniums once every couple of days, or as necessary to keep the soil consistently moist but never soggy. You may need to increase how often you water your geraniums if you notice their leaves wilting or yellowing.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary rhododendron hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/rhododendrons.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p>Water your rhododendron twice a week for the first few years after it has been planted. Rhododendron roots grow close to the surface, which means they need water more frequently. Adjust the amount of water to the size of the shrub.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary begonia hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/begonias.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> When they are growing, keep begonias moist. During hot summer weather, container plants may need watering two or three times a week. For garden plants, hardy begonia should be kept constantly moist but not soggy.
+        </p>
+      </div>
+    </div>
+
+    <div class="flowerSummary pansy hide">
+      <div class="flowerBoxImageContainer">
+        <img src="images/pansies.jpg" class="flowerBoxImage">
+      </div>
+      <div class="flowerBoxText">
+        <p> Pansies need about 1 inch of water each week during the growing season. In many cases, rainfall in your area may meet the flowers needs. You will need to water the plants all spring and summer during dry spells.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="js/app_p2.js"></script>
+</body>
+</html>
