@@ -1,0 +1,58 @@
+#Stage_jbeeb_3 {
+  position: relative;
+}
+
+#userEmailChoicesDiv {
+  width: 400px;
+  height: 600px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: block;
+}
+
+#alertMessageDiv {
+  width: 398px;
+  height: 298px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+#preferencesHeaderDiv {
+  width: 398px;
+  height: 98px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+#preferencesHeader {
+  text-align: center;
+}
+
+#formDiv {
+  width: 398px;
+  height: 198px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
