@@ -1,33 +1,99 @@
+#body {
+  background-image: url(../img/flowerbg.jpg);
+  background-size: 100%;
+  font-family: 'Abel', sans-serif;
+}
+
 #header {
+  font-family: 'Abel', sans-serif;
   position: relative;
   text-align: center;
   font-size: 75px;
+  background-color: rgba(242, 186, 5, 0.4);
 }
 
+#email {
+  position: relative;
+  margin-left: 15.6%
+}
+
+#password {
+  margin-left: 5.5%;
+}
 .hidden {
+  position: relative;
+  left: 50%;
+  font-family: 'Abel', sans-serif;
+  display: none;
+}
+
+.logIn {
+  position: relative;
+  left: 50%
+  font-family: 'Abel', sans-serif;
   display: none;
 }
 
 #signIn {
+  font-family: 'Abel', sans-serif;
   position:relative;
   left: 40%;
 }
 
-#createAccount {
+#signUp {
   position: relative;
-  left: 43.75%;
+  left: 43%;
+  font-family: 'Abel', sans-serif;
+}
+
+#createAccount {
+  font-family: 'Abel', sans-serif;
+  position: relative;
+  left: 42%;
 }
 
 #signInForm {
+  font-family: 'Abel', sans-serif;
   position: relative;
-  width: 10%;
-  padding-left: 40%
+  width: 20%;
+  margin-left: 40%;
+  background-color: rgba(254, 248, 98, 0.6);
 }
 
 #signUpForm {
+  font-family: 'Abel', sans-serif;
   display: none;
   position: relative;
-  width: 10%;
-  padding-left: 40%;
-  padding-top: 2%;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 2%;
+  background-color: rgba(254, 248, 98, 0.6);
+}
+
+#name {
+  margin-left: 15.4%;
+}
+
+#city {
+  margin-left: 19.5%
+}
+
+#state {
+  margin-left: 15.6%;
+}
+
+#email2 {
+  margin-left: 15.6%
+}
+
+#password2 {
+  margin-left: 5.6%;
+}
+
+#noMatch {
+  margin-left: 31%;
+}
+
+#signUpMessage {
+  margin-left: 39%;
 }

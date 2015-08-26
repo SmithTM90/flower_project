@@ -1,16 +1,20 @@
 'use-strict'
 
-var User = function(email, password) {
+var user;
+
+var User = function(name, city, state, email, password) {
+  this.user_name = name;
+  this.user_city = city;
+  this.user_state = state;
   this.user_email = email;
   this.user_password = password;
 }
+//this was used to test the sign in functionality
+// var fillIn = new User ('John', 'Seattle', 'WA', 'example@fake.com', 'nugget');
+// localStorage.setItem('test', JSON.stringify(fillIn));
 
-var fillIn = new User ('example@fake.com', 'nugget');
-
-localStorage.setItem('test', JSON.stringify(fillIn));
-
-if (JSON.parse(localStorage.getItem('test'))) {
-  var user = JSON.parse(localStorage.getItem('test'));
+if (JSON.parse(localStorage.getItem('user'))) {
+  user = JSON.parse(localStorage.getItem('user'));
 }
 
 $('#signIn').click(function() {
@@ -29,9 +33,16 @@ $('#createAccount').click(function() {
 
 $('#signUp').click(function() {
   console.log('click');
-  document.getElementById('name').value
-  document.getElementById('city').value
-  document.getElementById('state').value
-  document.getElementById('email2').value
-  document.getElementById('password2').value
-}
+
+  $('.logIn').show();
+
+  user = new User (
+    this.user_name = document.getElementById('name').value,
+    this.user_city = document.getElementById('city').value,
+    this.user_state = document.getElementById('state').value,
+    this.user_email = document.getElementById('email2').value,
+    this.user_password = document.getElementById('password2').value
+  );
+  localStorage.setItem('user', JSON.stringify(user));
+  $('#signUpForm').slideUp();
+});
