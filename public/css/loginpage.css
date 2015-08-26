@@ -1,0 +1,33 @@
+#header {
+  position: relative;
+  text-align: center;
+  font-size: 75px;
+}
+
+.hidden {
+  display: none;
+}
+
+#signIn {
+  position:relative;
+  left: 40%;
+}
+
+#createAccount {
+  position: relative;
+  left: 43.75%;
+}
+
+#signInForm {
+  position: relative;
+  width: 10%;
+  padding-left: 40%
+}
+
+#signUpForm {
+  display: none;
+  position: relative;
+  width: 10%;
+  padding-left: 40%;
+  padding-top: 2%;
+}
