@@ -39,11 +39,11 @@
           $('.'+flowerBoxArray[i]).css("display", "block");
         }
       }
-      // localStorage.setItem('user', 'Claire');
-      // if (localStorage.getItem('user')){
-      //   var user = JSON.parse(localStorage.getItem('user'));
-      //   $('#flowerBoxHeading').text(user.user_name + "'s Flower Box");
-      // }
+      // Check for user in local storage-- if so, pring user's name to flower box
+      if (localStorage.getItem('user')){
+        var user = JSON.parse(localStorage.getItem('user'));
+        $('#flowerBoxHeading').text(user.user_name + "'s Flower Box");
+      }
 
       // Add event listener to a button allowing user to empty the flower box
       $('.emptyBox').on('click', function(){
