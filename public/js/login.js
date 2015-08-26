@@ -20,7 +20,7 @@ if (JSON.parse(localStorage.getItem('user'))) {
 $('#signIn').click(function() {
     console.log("click");
   if (document.getElementById('email').value === user.user_email && document.getElementById('password').value === user.user_password) {
-    window.location = "index.html";
+    window.location = "index_p2.html";
   } else {
     $('.hidden').show();
   }
