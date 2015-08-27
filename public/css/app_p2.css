@@ -185,3 +185,8 @@ background-color: #fef862;
     float: left;
     width: 84.7%;
 }
+
+#output {
+  position: relative;
+  margin-bottom: 50px;
+}
