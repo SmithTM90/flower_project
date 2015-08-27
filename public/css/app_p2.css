@@ -6,10 +6,30 @@
   display: none;
 }
 
-#nav{
+nav{
   background-color: #f2ba05;
   border: solid black 1px;
   width: 100%;
+  float: left;
+}
+
+nav ul{
+  list-style: none;
+  overflow: hidden;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+nav li{
+  float:left;
+  margin: 20px 30px 20px 0px;
+  line-height: 30px;
+}
+
+nav h1{
+  float: right;
+  margin: 20px;
+  line-height: 30px;
 }
 
 #flowerIcons{
