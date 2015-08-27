@@ -2,23 +2,47 @@
   font-family: Abel, sans-serif;
 }
 
+body{
+  background-color: #465902;
+}
+
 .hide{
   display: none;
 }
-#nav{
+nav{
+  background-color: #f2ba05;
   border: solid black 1px;
   width: 100%;
+  float: left;
 }
 
-#siteName{
-  float:right;
+nav ul{
+  list-style: none;
+  overflow: hidden;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+nav li{
+  float:left;
+  margin: 20px 30px 20px 0px;
+  line-height: 30px;
+}
+
+nav h1{
+  float: right;
+  margin: 20px;
+  line-height: 30px;
 }
 
 #flowerText{
+  background-color: #FEF862;
   display: inline-block;
   width: 40%;
-  margin-left: 30px;
+  margin-left: 1.5px;
   text-align:justify;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #flowerPhotoEtc{
@@ -27,4 +51,15 @@
   display: inline-block;
   float: right;
   width: 40%;
+}
+
+#flowerPhotoEtc img{
+  width: 100%;
+  height: auto;
+  border: solid white 10px;
+  border-radius: 5px;
+}
+
+.bttn{
+  font-size: 400%;
 }
