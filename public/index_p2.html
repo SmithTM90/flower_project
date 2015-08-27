@@ -189,7 +189,7 @@
       <h1 id="preferencesHeader">Your Alert Preferences</h1>
     </div>
     <div id="formDiv">
-      <label id="utLabel" for="userTemp">What temperature range is going to trigger your email</label>
+      <label id="utLabel" for="userTemp">If the average temperature exceeds</label>
       <select id="userTemp">
         <option class = "option" value="90">90+ degrees</option>
         <option class = "option" value="85">85+ degrees</option>
@@ -199,7 +199,7 @@
         <option class = "option" value="65">65+ degrees</option>
         <option class = "option" value="60">60+ degrees</option>
       </select>
-      <label id="upLabel" for="userPrecip">How little rain will trigger your email</label>
+      <label id="upLabel" for="userPrecip">or cumulative precipitation is less than</label>
       <select id="userPrecip">
         <option class = "option" value="3">less than 3 inches</option>
         <option class = "option" value="2.5">less than 2.5 inches</option>
@@ -209,18 +209,20 @@
         <option class = "option" value=".5">less than .5 inches</option>
       </select>
 
-      <label id="adLabel" for="amountOfDays">How many days would you like your notifications to be based on</label>
+      <label id="adLabel" for="amountOfDays">for a period of</label>
       <select id="amountOfDays">
-        <option class = "option" value="9">1 day</option>
-        <option class = "option" value="8">2 days</option>
-        <option class = "option" value="7">3 days</option>
-        <option class = "option" value="6">4 days</option>
+
+        <option class = "option" value="1">1 day</option>
+        <option class = "option" value="2">2 days</option>
+        <option class = "option" value="3">3 days</option>
+        <option class = "option" value="4">4 days</option>
         <option class = "option" value="5">5 days</option>
-        <option class = "option" value="4">6 days</option>
-        <option class = "option" value="3">7 days</option>
-        <option class = "option" value="2">8 days</option>
-        <option class = "option" value="1">9 days</option>
-        <option class = "option" value="0">10 days</option>
+        <option class = "option" value="6">6 days</option>
+        <option class = "option" value="7">7 days</option>
+        <option class = "option" value="8">8 days</option>
+        <option class = "option" value="9">9 days</option>
+        <option class = "option" value="10">10 days</option>
+
       </select>
       <label id="edLabel" for="emailDelay">Set how frequent you would like to recieve emails</label>
       <select id="emailDelay">
@@ -237,8 +239,9 @@
       <button id="userEmailButton" type="button">Set your preferences</button>
     </div>
 
-    <div id="alertMessageDiv">
+    <div>
       <div id="output"></div>
+      <div id="alertMessageDiv"></div>
     </div>
   </div>
 
