@@ -10,6 +10,7 @@ var userEmailButton = $('#userEmailButton');
     window.userObj.amountOfDays = parseInt($('#amountOfDays').val());
     window.userObj.delayEmail = parseInt($('#emailDelay').val());
     console.log(window.userObj);
+    $('#alertMessageDiv').html('');
     $('#alertMessageDiv').append('<p id="newSignUp">Thanks ' + userObj.user_name + ' for signing up for our notifications. You are the best!</p>')
 
     runTimer();
@@ -51,11 +52,12 @@ var onCompleteFunction = function() {
 var conditionsMet = function() {
   console.log('Checking conditions');
   var daysElement = $('#emailDelay option:selected').text();
+  var dataCollectionTime = $('#amountOfDays option:selected').text();
   if(userObj.temp <= tenDayObj.tempHighAvg) {
-        $('#alertMessageDiv').append('<p class ="alertMessage">Hey ' + userObj.user_name + ', Just a reminder to take care of your plants! It has been ' + daysElement + ' since your last notification. In that time the average temperature has been ' + tenDayObj.tempHighAvg + ' and there has been ' + tenDayObj.precipInTotal + ' inches of rain. Be sure to show your plants some love!</p>');
+        $('#alertMessageDiv').append('<p class ="alertMessage">Hey ' + userObj.user_name + ', Just a reminder to take care of your plants! It has been ' + daysElement + ' since your last notification. During the last ' + dataCollectionTime + ' the average temperature has been ' + tenDayObj.tempHighAvg + ' and there has been ' + tenDayObj.precipInTotal + ' inches of rain. Be sure to show your plants some love!</p>');
   }
   else if (userObj.precip >= tenDayObj.precipInTotal){
-    $('#alertMessageDiv').append('<p class ="alertMessage">Hey ' + userObj.user_name + ' , Just a reminder to take care of your plants! It has been ' + daysElement + ' since your last notification. In that time the average temperature has been ' + tenDayObj.tempHighAvg + ' and there has been ' + tenDayObj.precipInTotal + ' inches of rain. Be sure to show your plants some love!</p>');
+    $('#alertMessageDiv').append('<p class ="alertMessage">Hey ' + userObj.user_name + ' , Just a reminder to take care of your plants! It has been ' + daysElement + ' since your last notification. During the last ' + dataCollectionTime + ' the average temperature has been ' + tenDayObj.tempHighAvg + ' and there has been ' + tenDayObj.precipInTotal + ' inches of rain. Be sure to show your plants some love!</p>');
   }
   else {
     $('#alertMessageDiv').append('<p id="noWorriesMessage">Hey ' + userObj.user_name + ' , The temperature and amount of rain have been adequate and your plants should be doing fine, but dont forget to check on them anyway, plants need love!</p>');
@@ -91,7 +93,7 @@ var ajaxFunction = function() {
               fahrenheit: 80
             },
             qpf_allday: {
-              in: 3
+              in: 2
             }
           },
           {
@@ -193,13 +195,14 @@ var initPage = function(response) {
 
   var tempHighSum = 0;
   var precipInSum = 0;
+  console.log(window.userObj.amountOfDays);
 
-  for(var j = newDailyWeatherArray.length - window.userObj.amountOfDays; j < newDailyWeatherArray.length; j++) {
+  for(var j = (newDailyWeatherArray.length - window.userObj.amountOfDays); j < newDailyWeatherArray.length; j++) {
     tempHighSum += parseInt(newDailyWeatherArray[j].tempHigh);
   }
   var tempHighAvg = (tempHighSum/window.userObj.amountOfDays).toFixed(2);
 
-  for(var l = newDailyWeatherArray.length - window.userObj.amountOfDays; l < newDailyWeatherArray.length; l++) {
+  for(var l = (newDailyWeatherArray.length - window.userObj.amountOfDays); l < newDailyWeatherArray.length; l++) {
     precipInSum += parseFloat(newDailyWeatherArray[l].precipIn);
   }
   var precipInTotal = precipInSum;
