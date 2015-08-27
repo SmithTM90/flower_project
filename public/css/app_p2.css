@@ -75,7 +75,7 @@ nav h1{
 }
 
 #flowerBox{
-  background-color: #fef862;
+  background-color: rgba(254, 248, 98, 0.85);
   margin-top: 10px;
   margin-left: 10px;
   border: solid black 2px;
@@ -98,7 +98,7 @@ nav h1{
 }
 
 .flowerBoxText{
-  width: 250px;
+  width: 455px;
   display: block;
   margin-left: 60px;
   text-align: justify;
@@ -134,7 +134,7 @@ nav h1{
 }
 
 #alertMessageDiv {
-background-color: #fef862;
+background-color: rgba(254, 248, 98, 0.85);
   width: 640px;
   height: 298px;
   border-width: 1px;
@@ -156,7 +156,7 @@ background-color: #fef862;
 }
 
 #formDiv {
-  background-color: #fef862;
+  background-color: rgba(254, 248, 98, 0.85);
   width: 640px;
   height: 120px;
   border-width: 1px;
@@ -222,8 +222,9 @@ background-color: #fef862;
 }
 
 #output {
+  background-color: rgba(254, 248, 98, 0.85);
+  border: solid black 1px;
   position: relative;
-  margin-bottom: 50px;
 }
 
 .option {
