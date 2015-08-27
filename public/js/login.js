@@ -29,12 +29,14 @@ $('#signIn').click(function() {
 $('#createAccount').click(function() {
   console.log('click');
   $('#signUpForm').slideDown();
+  $('#signUp').show();
+  $('#noMatch').hide();
 });
 
 $('#signUp').click(function() {
   console.log('click');
-
   $('.logIn').show();
+  $('#noMatch').hide();
 
   user = new User (
     this.user_name = document.getElementById('name').value,

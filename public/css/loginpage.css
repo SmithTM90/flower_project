@@ -14,11 +14,15 @@
 }
 
 #email {
+  float:right;
+  margin-right: 5px;
   position: relative;
   margin-left: 15.6%
 }
 
 #password {
+  float:right;
+  margin-right: 5px;
   margin-left: 5.5%;
 }
 .hidden {
@@ -40,6 +44,7 @@
 }
 
 #signUp {
+  display:none;
   position: relative;
   left: 43%;
   font-family: 'Abel', sans-serif;
@@ -70,29 +75,44 @@
 }
 
 #name {
+  float:right;
+  margin-right: 5px;
   margin-left: 15.4%;
 }
 
 #city {
+  float:right;
+  margin-right: 5px;
   margin-left: 19.5%
 }
 
 #state {
+  float:right;
+  margin-right: 5px;
   margin-left: 15.6%;
 }
 
 #email2 {
+  float:right;
+  margin-right: 5px;
   margin-left: 15.6%
 }
 
 #password2 {
+  float:right;
+  margin-right: 5px;
   margin-left: 5.6%;
 }
 
 #noMatch {
+  width: 38.2%;
+  background-color: rgba(254, 248, 98, 0.6);
   margin-left: 31%;
+  margin-right: 31%;
 }
 
 #signUpMessage {
+  background-color: rgba(254, 248, 98, 0.6);
   margin-left: 39%;
+  margin-right: 39%;
 }
