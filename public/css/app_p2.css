@@ -2,20 +2,25 @@
   font-family: Abel, sans-serif;
 }
 
+body{
+  background-image: url(../img/leaf-patterns.jpg);
+}
+
 .hide{
   display: none;
 }
 
 #nav{
   background-color: #f2ba05;
-  border: solid black 1px;
+  border: solid black 2px;
   width: 100%;
 }
 
 #flowerIcons{
-  background-color: #465902;
+  background-color: rgba(70, 89, 2, 0);
   width: 99.8%;
-  border: solid black 1px;
+  border: solid black 2px;
+  margin-top: 10px;
 }
 
 .photoIcon{
@@ -24,28 +29,38 @@
   margin-left: 2%;
 }
 
+.photoIcon:hover{
+  transform: scale(1.05);
+}
+
 #topRow{
   display: inline-block;
   width: 100%;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+  margin-top: 7px;
 }
 
 #bottomRow{
   display: inline-block;
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+  margin-top: 3px;
 }
 
 #flowerBox{
-  border: solid black 1px;
-  width: 400px;
+  background-color: #fef862;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: solid black 2px;
+  width: 550px;
+  text-align: center;
 }
 
 .flowerSummary{
 /*  text-align: justify;*/
-  border: solid black 1px;
+  border: solid black 2px;
   position: relative;
 }
 
@@ -81,11 +96,12 @@
   text-align: justify;
 }
 
-
-
 #userEmailChoicesDiv {
-  width: 400px;
-  height: 600px;
+  float: right;
+  margin-right: 10px;
+  margin-top: -150px;
+  width: 642px;
+  height: 499px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
@@ -93,7 +109,8 @@
 }
 
 #alertMessageDiv {
-  width: 398px;
+  background-color: #fef862;
+  width: 640px;
   height: 298px;
   border-width: 1px;
   border-color: black;
@@ -101,8 +118,9 @@
 }
 
 #preferencesHeaderDiv {
-  width: 398px;
-  height: 98px;
+  background-color: #f2ba05;
+  width: 640px;
+  height: 80px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
@@ -113,9 +131,34 @@
 }
 
 #formDiv {
-  width: 398px;
-  height: 198px;
+  background-color: #fef862;
+  width: 640px;
+  height: 115px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
+}
+
+#userEmailButton {
+  margin-left: 250px;
+}
+
+#utLabel {
+    width: 85%;
+    float: left;
+}
+
+#upLabel {
+    float: left;
+    width: 78.5%
+}
+
+#adLabel {
+  float: left;
+  width: 88.3%;
+}
+
+#edLabel {
+    float: left;
+    width: 84.7%;
 }
