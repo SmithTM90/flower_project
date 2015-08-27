@@ -8,15 +8,14 @@
   <title>Garden Reminder</title>
 </head>
 <body>
-  <table id="nav">
-    <tr>
-        <td id="p1"><a href="login.html">Home</a></td>
-        <td id="p2">Flower Box</td>
-      <td id="p3"><a href="index_p3.html">Flower Detail</td>
-      <td id="siteName"><h1>Garden Reminder</h1></td>
-    </tr>
-  </table>
-  <section id="flowerIcons">
+ <nav>
+    <h1>Garden Reminder</h1>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li>Flower Box</li>
+      <li><a href="index_p3.html">Flower Detail</a></li>
+    </ul>
+  </nav>  <section id="flowerIcons">
     <div id="topRow">
       <a href="index_p3.html#petunia">
         <img id="petunia" src="images/petunias.jpg" class="photoIcon">
@@ -181,7 +180,7 @@
       </div>
     </div>
     <div id="promptMoreFlowers">
-      <p><em>Add more flowers to your box by clicking on flower icons above!<em></p>
+      <p><em>Add more flowers to your box by clicking on flower icons above!</em></p>
     </div>
   </section>
 
@@ -190,63 +189,60 @@
       <h1 id="preferencesHeader">Your Alert Preferences</h1>
     </div>
     <div id="formDiv">
-      <label id="utLabel" for="userTemp">what temperature is going to trigger your email</label>
+      <label id="utLabel" for="userTemp">What temperature range is going to trigger your email</label>
       <select id="userTemp">
-        <option value="90">90+degrees</option>
-        <option value="85">85+degrees</option>
-        <option value="80">80+degrees</option>
-        <option value="75">75+degrees</option>
-        <option value="70">70+degrees</option>
-        <option value="65">65+degrees</option>
-        <option value="60">60+degrees</option>
+        <option class = "option" value="90">90+ degrees</option>
+        <option class = "option" value="85">85+ degrees</option>
+        <option class = "option" value="80">80+ degrees</option>
+        <option class = "option" value="75">75+ degrees</option>
+        <option class = "option" value="70">70+ degrees</option>
+        <option class = "option" value="65">65+ degrees</option>
+        <option class = "option" value="60">60+ degrees</option>
       </select>
-      <label id="upLabel" for="userPrecip">how little rain will trigger your email</label>
+      <label id="upLabel" for="userPrecip">How little rain will trigger your email</label>
       <select id="userPrecip">
-        <option value="3">lessthan3inches</option>
-        <option value="2.5">lessthan2.5inches</option>
-        <option value="2">lessthan2inches</option>
-        <option value="1.5">lessthan1.5inches</option>
-        <option value="1">lessthan1inch</option>
-        <option value=".5">lessthan.5inches</option>
+        <option class = "option" value="3">less than 3 inches</option>
+        <option class = "option" value="2.5">less than 2.5 inches</option>
+        <option class = "option" value="2">less than 2 inches</option>
+        <option class = "option" value="1.5">less than 1.5 inches</option>
+        <option class = "option" value="1">less than 1 inch</option>
+        <option class = "option" value=".5">less than .5 inches</option>
       </select>
 
-      <label id="adLabel" for="amountOfDays">How many days would you like your notification based on</label>
+      <label id="adLabel" for="amountOfDays">How many days would you like your notifications to be based on</label>
       <select id="amountOfDays">
-        <option value="9">1day</option>
-        <option value="8">2days</option>
-        <option value="7">3days</option>
-        <option value="6">4days</option>
-        <option value="5">5days</option>
-        <option value="4">6days</option>
-        <option value="3">7days</option>
-        <option value="2">8days</option>
-        <option value="1">9days</option>
-        <option value="0">10days</option>
+        <option class = "option" value="9">1 day</option>
+        <option class = "option" value="8">2 days</option>
+        <option class = "option" value="7">3 days</option>
+        <option class = "option" value="6">4 days</option>
+        <option class = "option" value="5">5 days</option>
+        <option class = "option" value="4">6 days</option>
+        <option class = "option" value="3">7 days</option>
+        <option class = "option" value="2">8 days</option>
+        <option class = "option" value="1">9 days</option>
+        <option class = "option" value="0">10 days</option>
       </select>
-      <label id="edLabel" for="emailDelay">Set How frequent you would like to recieve emails</label>
+      <label id="edLabel" for="emailDelay">Set how frequent you would like to recieve emails</label>
       <select id="emailDelay">
-        <option value="10">1 day</option>
-        <option value="172800">2 days</option>
-        <option value="259200">3 days</option>
-        <option value="345600">4 days</option>
-        <option value="432000">5 days</option>
-        <option value="518400">6 days</option>
-        <option value="604800">7 days</option>
-        <option value="1209600">14 days</option>
-        <option value="2592000">30 days</option>
+        <option class = "option" value="10">1 day</option>
+        <option class = "option" value="172800">2 days</option>
+        <option class = "option" value="259200">3 days</option>
+        <option class = "option" value="345600">4 days</option>
+        <option class = "option" value="432000">5 days</option>
+        <option class = "option" value="518400">6 days</option>
+        <option class = "option" value="604800">7 days</option>
+        <option class = "option" value="1209600">14 days</option>
+        <option class = "option" value="2592000">30 days</option>
       </select>
-      <button id="userEmailButton" type="button">submit your preferences</button>
+      <button id="userEmailButton" type="button">Set your preferences</button>
     </div>
 
     <div id="alertMessageDiv">
       <div id="output"></div>
     </div>
-
-
   </div>
 
   <script src="js/api.js"></script>
-
   <script src="js/app_p2.js"></script>
 </body>
 </html>

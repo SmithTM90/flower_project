@@ -12,12 +12,13 @@ body{
 
 nav{
   background-color: #f2ba05;
-  border: solid black 1px;
+  border: solid black 2px;
   width: 100%;
   float: left;
 }
 
 nav ul{
+  font-size: 20px;
   list-style: none;
   overflow: hidden;
   margin: 0 0 0 20px;
@@ -31,6 +32,7 @@ nav li{
 }
 
 nav h1{
+  font-size: 40px;
   float: right;
   margin: 20px;
   line-height: 30px;
@@ -82,7 +84,6 @@ nav h1{
 }
 
 .flowerSummary{
-/*  text-align: justify;*/
   border: solid black 2px;
   position: relative;
 }
@@ -100,6 +101,7 @@ nav h1{
   width: 250px;
   display: block;
   margin-left: 60px;
+  text-align: justify;
 }
 
 .flowerBoxImage{
@@ -113,16 +115,16 @@ nav h1{
   text-align: justify;
 }
 
-.flowerBoxText{
-  display: inline-block;
-  width: 80%;
-  text-align: justify;
+.emptyBox {
+  font-size: 18px;
 }
-
 #userEmailChoicesDiv {
- float: right;
+  /*float: right;
   margin-right: 10px;
-  margin-top: -150px;
+  margin-top: -150px;*/
+  position: absolute;
+  top: 434px;
+  right: 17px;
   width: 642px;
   height: 499px;
   border-width: 1px;
@@ -156,37 +158,74 @@ background-color: #fef862;
 #formDiv {
   background-color: #fef862;
   width: 640px;
-  height: 115px;
+  height: 120px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
 }
 
 #userEmailButton {
-  margin-left: 250px;
+  font-size: 18px;
+  margin-left: 235px;
 }
 
 #utLabel {
-    width: 85%;
+    width: 57%;
     float: left;
 }
 
 #upLabel {
     float: left;
-    width: 78.5%
+    width: 76%
 }
 
 #adLabel {
   float: left;
-  width: 88.3%;
+  width: 66%;
 }
 
 #edLabel {
     float: left;
-    width: 84.7%;
+    width: 76%;
+}
+
+#userTemp {
+  width: 142px;
+  font-size: 15px;
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+#userPrecip {
+  width: 142px;
+  font-size: 15px;
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+#amountOfDays {
+  width: 142px;
+  font-size: 15px;
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+#emailDelay {
+  width: 142px;
+  font-size: 15px;
+  display: block;
+  float: right;
+  margin-right: 10px;
 }
 
 #output {
   position: relative;
   margin-bottom: 50px;
+}
+
+.option {
+  text-align: right;
 }
