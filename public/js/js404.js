@@ -6,32 +6,23 @@
 'use strict';
 var obj404 = {};
 
-obj404.imgAry = ['giphy.gif', 'giphy2.gif', 'giphy3.gif', 'giphy4.gif', 'giphy5.gif', 'giphy6.gif', 'giphy7.gif', 'giphy8.gif', 'giphy9.gif', 'giphy10.gif',, 'giphy11.gif', 'giphy12.gif', 'giphy13.gif'];
-obj404.imgContainers = document.getElementsByClassName('crazy');
-obj404.path = 'image/';
+obj404.imgSize = 1200;
+obj404.fntSize = -720;
 
-console.log(obj404.imgContainers);
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-}
-
-function showImages(ary){
-  var count = 0, len = ary.length;
-  for(count; count < len; count++){
-      ary[count].attributes[1].value = obj404.path + loadImage(obj404.imgAry);
+var bkImg = document.getElementById('main');
+var msg = document.getElementById('h');
+var pg = document.getElementById('pg');
+var ana = setInterval(function(){
+  if(obj404.imgSize > 0){
+    obj404.imgSize--;
+    obj404.fntSize++;
+    var ss = obj404.imgSize.toString() + 'px';
+    var fs = obj404.fntSize.toString() + 'px';
+    bkImg.style.backgroundSize = ss;
+    msg.style.marginTop = ss;
+    pg.style.fontSize = fs;
   }
-}
-
-function loadImage(ary){
-  var idx = getRandomInt(0, ary.length);
-  return ary[idx];
-}
-
-var s = 1200;
-
-setInterval(function(){
-  s--;
-  var ss = s.toString() + 'px';
-  document.getElementById('main').style.backgroundSize = ss;
+  else {
+    clearInterval(ana);
+  }
 }, 5);
