@@ -46,17 +46,19 @@
 #signUp {
   display:none;
   position: relative;
-  left: 43%;
+  left: 46%;
   font-family: 'Abel', sans-serif;
 }
 
 #createAccount {
   font-family: 'Abel', sans-serif;
   position: relative;
-  left: 42%;
+  left: 40%;
 }
 
 #signInForm {
+  border-radius: 10px;
+  padding: 5px;
   font-family: 'Abel', sans-serif;
   position: relative;
   width: 20%;
@@ -65,6 +67,8 @@
 }
 
 #signUpForm {
+  border-radius: 10px;
+  padding: 5px;
   font-family: 'Abel', sans-serif;
   display: none;
   position: relative;
@@ -75,21 +79,18 @@
 }
 
 #name {
-  margin-right: 16px;
   float:right;
   margin-right: 5px;
   margin-left: 15.4%;
 }
 
 #city {
-  margin-right: 7px;
   float:right;
   margin-right: 5px;
   margin-left: 19.5%
 }
 
 #state {
-  margin-right: 6px;
   float:right;
   margin-right: 5px;
   margin-left: 15.6%;
@@ -108,14 +109,60 @@
 }
 
 #noMatch {
-  width: 38.2%;
+  width: 35%;
   background-color: rgba(254, 248, 98, 0.6);
-  margin-left: 31%;
-  margin-right: 31%;
+  margin-left: 33%;
+  margin-right: 29%;
+  margin-top: 2%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #signUpMessage {
   background-color: rgba(254, 248, 98, 0.6);
-  margin-left: 39%;
-  margin-right: 39%;
+  margin-left: 40%;
+  margin-right: 39.5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#nameLabel {
+  margin-right: 36px;
+}
+
+#cityLabel {
+  margin-right: 26px;
+}
+
+#stateLabel {
+  margin-right: 33px;
+}
+
+#emailLabel2 {
+  margin-right: 8px;
+}
+
+#emailLabel {
+  margin-right: 36px;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px #666666;
+  -moz-box-shadow: 0px 3px 6px #666666;
+  box-shadow: 0px 3px 6px #666666;
+  font-family: Arial;
+  color: #fef962;
+  font-size: 15px;
+  background: #465902;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background: #f2ba05;
+  text-decoration: none;
 }

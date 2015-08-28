@@ -11,7 +11,7 @@ var userEmailButton = $('#userEmailButton');
     window.userObj.delayEmail = parseInt($('#emailDelay').val());
     console.log(window.userObj);
     $('#alertMessageDiv').html('');
-    $('#alertMessageDiv').append('<p id="newSignUp">Thanks ' + userObj.user_name + ' for signing up for our notifications. You are the best!</p>')
+    $('#alertMessageDiv').append('<p id="newSignUp">Thank you ' + userObj.user_name + ' for signing up for our notifications. You are the best!</p>')
 
     runTimer();
   });
@@ -33,7 +33,7 @@ var updateTimer = function(expiration) {
     var hoursleft = Math.floor((diff - 24*60*60*daysleft) / (60*60));
     var minutesleft = Math.floor( (diff - 24*60*60*daysleft - 60*60*hoursleft)/ (60) );
     var secondsleft = diff % (60);
-    $('#output').html(daysleft + ' ' + hoursleft + ' ' + minutesleft + ' ' + secondsleft);
+    $('#output').html('Time until next alert - ' + ' Days: ' + daysleft + ' Hours: ' + hoursleft + ' Min: ' + minutesleft + ' Secs: ' + secondsleft);
 
     if(daysleft === 0 && hoursleft === 0 && minutesleft === 0 && secondsleft === 0) {
       onCompleteFunction();

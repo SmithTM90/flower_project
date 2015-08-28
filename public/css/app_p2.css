@@ -15,6 +15,7 @@ nav{
   border: solid black 2px;
   width: 100%;
   float: left;
+  border-radius: 20px;
 }
 
 nav ul{
@@ -40,8 +41,9 @@ nav h1{
 
 #flowerIcons{
   background-color: rgba(70, 89, 2, 0);
-  width: 99.8%;
+  width: 100%;
   border: solid black 2px;
+  border-radius: 30px;
   margin-top: 10px;
 }
 
@@ -49,6 +51,7 @@ nav h1{
   width: 12%;
   margin-right: 2%;
   margin-left: 2%;
+  border-radius: 100px;
 }
 
 .photoIcon:hover{
@@ -81,6 +84,7 @@ nav h1{
   border: solid black 2px;
   width: 550px;
   text-align: center;
+  border-radius: 15px;
 }
 
 .flowerSummary{
@@ -119,27 +123,30 @@ nav h1{
   font-size: 18px;
 }
 #userEmailChoicesDiv {
-  /*float: right;
-  margin-right: 10px;
-  margin-top: -150px;*/
   position: absolute;
-  top: 434px;
+  top: 472px;
   right: 17px;
   width: 642px;
-  height: 499px;
+  height: 444px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  border-radius: 15px;
+  border-bottom: 0px;
   display: block;
 }
 
 #alertMessageDiv {
 background-color: rgba(254, 248, 98, 0.85);
   width: 640px;
-  height: 298px;
+  height: 200px;
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #preferencesHeaderDiv {
@@ -149,6 +156,8 @@ background-color: rgba(254, 248, 98, 0.85);
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 #preferencesHeader {
@@ -162,11 +171,12 @@ background-color: rgba(254, 248, 98, 0.85);
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  padding-bottom: 10px;
 }
 
 #userEmailButton {
   font-size: 18px;
-  margin-left: 235px;
+  margin-left: 195px;
 }
 
 #utLabel {
@@ -225,8 +235,51 @@ background-color: rgba(254, 248, 98, 0.85);
   background-color: rgba(254, 248, 98, 0.85);
   border: solid black 1px;
   position: relative;
+  font-size: 20px;
+  text-align: center;
 }
 
 .option {
   text-align: right;
+}
+
+.emptyBox {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px #666666;
+  -moz-box-shadow: 0px 3px 6px #666666;
+  box-shadow: 0px 3px 6px #666666;
+  font-family: Arial;
+  color: #fef962;
+  font-size: 20px;
+  background: #465902;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.emptyBox:hover {
+  background: #f2ba05;
+  text-decoration: none;
+}
+
+#userEmailButton {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px #666666;
+  -moz-box-shadow: 0px 3px 6px #666666;
+  box-shadow: 0px 3px 6px #666666;
+  font-family: Arial;
+  color: #fef962;
+  font-size: 20px;
+  background: #465902;
+  padding: 5px 40px 5px 40px;
+  text-decoration: none;
+}
+
+#userEmailButton:hover {
+  background: #f2ba05;
+  text-decoration: none;
 }
