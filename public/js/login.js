@@ -37,6 +37,7 @@ $('#signUp').click(function() {
   console.log('click');
   $('.logIn').show();
   $('#noMatch').hide();
+  $('#signUp').hide();
 
   user = new User (
     this.user_name = document.getElementById('name').value,
