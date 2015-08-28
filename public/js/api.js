@@ -75,7 +75,7 @@ var calls = 0;
 var ajaxFunction = function() {
   if (calls < 10){
     $.ajax( {
-    url: 'http://api.wunderground.com/api/ced427b045171f6a/forecast10day/q/' + window.userObj.user_state + '/' + window.userObj.user_city + '.json',
+    url: 'https://api.wunderground.com/api/ced427b045171f6a/forecast10day/q/' + window.userObj.user_state + '/' + window.userObj.user_city + '.json',
     method: 'GET'
   })
     .done(function(result) {
