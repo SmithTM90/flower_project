@@ -73,107 +73,107 @@ var DailyWeather = function(tempHigh, precipIn) {
 }
 var calls = 0;
 var ajaxFunction = function() {
-  // if (calls < 10){
-  //   $.ajax( {
-  //   url: 'http://api.wunderground.com/api/ced427b045171f6a/forecast10day/q/' + window.userObj.user_state + '/' + window.userObj.user_city + '.json',
-  //   method: 'GET'
-  // })
-  //   .done(function(result) {
-  //   initPage(result);
-  //   });
-  // }
-  // calls++;
-
-  var newObj = {
-    forecast: {
-      simpleforecast: {
-        forecastday: [
-          {
-            high: {
-              fahrenheit: 80
-            },
-            qpf_allday: {
-              in: 2
-            }
-          },
-          {
-            high: {
-              fahrenheit: 60
-            },
-            qpf_allday: {
-              in: 1.2
-            }
-          },
-          {
-            high: {
-              fahrenheit: 75
-            },
-            qpf_allday: {
-              in: 0
-            }
-          },
-          {
-            high: {
-              fahrenheit: 69
-            },
-            qpf_allday: {
-              in: 0
-            }
-          },
-          {
-            high: {
-              fahrenheit: 65
-            },
-            qpf_allday: {
-              in: 0.5
-            }
-          },
-          {
-            high: {
-              fahrenheit: 78
-            },
-            qpf_allday: {
-              in: 1
-            }
-          },
-          {
-            high: {
-              fahrenheit: 80
-            },
-            qpf_allday: {
-              in: 2
-            }
-          },
-          {
-            high: {
-              fahrenheit: 95
-            },
-            qpf_allday: {
-              in: 0.6
-            }
-          },
-          {
-            high: {
-              fahrenheit: 68
-            },
-            qpf_allday: {
-              in: 1.5
-            }
-          },
-          {
-            high: {
-              fahrenheit: 70
-            },
-            qpf_allday: {
-              in: 2.5
-            }
-          }
-        ]
-      }
-    }
+  if (calls < 10){
+    $.ajax( {
+    url: 'http://api.wunderground.com/api/ced427b045171f6a/forecast10day/q/' + window.userObj.user_state + '/' + window.userObj.user_city + '.json',
+    method: 'GET'
+  })
+    .done(function(result) {
+    initPage(result);
+    });
   }
+  calls++;
 
-  initPage(newObj);
+  // var newObj = {
+  //   forecast: {
+  //     simpleforecast: {
+  //       forecastday: [
+  //         {
+  //           high: {
+  //             fahrenheit: 80
+  //           },
+  //           qpf_allday: {
+  //             in: 2
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 60
+  //           },
+  //           qpf_allday: {
+  //             in: 1.2
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 75
+  //           },
+  //           qpf_allday: {
+  //             in: 0
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 69
+  //           },
+  //           qpf_allday: {
+  //             in: 0
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 65
+  //           },
+  //           qpf_allday: {
+  //             in: 0.5
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 78
+  //           },
+  //           qpf_allday: {
+  //             in: 1
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 80
+  //           },
+  //           qpf_allday: {
+  //             in: 2
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 95
+  //           },
+  //           qpf_allday: {
+  //             in: 0.6
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 68
+  //           },
+  //           qpf_allday: {
+  //             in: 1.5
+  //           }
+  //         },
+  //         {
+  //           high: {
+  //             fahrenheit: 70
+  //           },
+  //           qpf_allday: {
+  //             in: 2.5
+  //           }
+  //         }
+  //       ]
+  //     }
+  //   }
+  // }
+
+  // initPage(newObj);
 }
 
 
