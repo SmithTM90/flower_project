@@ -205,7 +205,7 @@ var initPage = function(response) {
   for(var l = (newDailyWeatherArray.length - window.userObj.amountOfDays); l < newDailyWeatherArray.length; l++) {
     precipInSum += parseFloat(newDailyWeatherArray[l].precipIn);
   }
-  var precipInTotal = precipInSum;
+  var precipInTotal = Math.floor(precipInSum);
   //I used window. to make my object global but still use it in my .done function
   window.tenDayObj = {
     tempHighAvg: tempHighAvg,
