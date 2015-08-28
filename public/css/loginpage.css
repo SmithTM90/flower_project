@@ -75,18 +75,21 @@
 }
 
 #name {
+  margin-right: 16px;
   float:right;
   margin-right: 5px;
   margin-left: 15.4%;
 }
 
 #city {
+  margin-right: 7px;
   float:right;
   margin-right: 5px;
   margin-left: 19.5%
 }
 
 #state {
+  margin-right: 6px;
   float:right;
   margin-right: 5px;
   margin-left: 15.6%;
